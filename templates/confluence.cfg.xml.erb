@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<confluence-configuration>
+  <setupStep>setupdbchoice-start</setupStep>
+  <setupType>custom</setupType>
+  <buildNumber>4215</buildNumber>
+  <properties>
+    <property name="confluence.license.hash">mqrqNAvVMBOFNQGewbUwmSLHaqmvVrEOTHxHMkNJFjgxcKCmj2L0GZBLbqTjTva7JMIOq8aZ2Kge0Xc8HY&gt;v5c4wBNimfJ</property>
+    <property name="confluence.license.message">qRoOMVGuAJvHrQahwrtuwcDAATQQPtDfQIEEuBXNwEtuHDquUVKtfWecJHxieebTLGbLMiVNjPlIkUxFgSQcKEskfuTNnWivTAAlANhSDSVXRQOUnGuExKjJBrJPjdRKgKUACXWIMjgmMtpRtgEXIHgBkTirfOOcddlIpbfXHlXwuDckRIEQQEwmBpbhRCdbgXHRMRfdfqvwTOswPSpNSEPhablQtKXDsgtJtWvHGvfLxSMULJIavxuODsJsnMwLrJFHDSiMOkwHrqwuwDECAFuQjG9E3mG6l&lt;ABSnLLaHyWBYIMMM11BndWfrgnSHtdj0G4XaP&lt;P&gt;NSTXYr0gDfhb1DI6qBNKpSVaWagzWwDpUlxBQ2B2B3eiur96mEon0&gt;jn7d&lt;3a8F4SK1u0M8FEKV1A9G6M7zqY7yhhwu8ARAK2f1qOLBFz2Zl50vpf0Ztl0jshiP0R&lt;36xa5tXLPaQTfDqrRD2pDBjda5u0ipUkZ8vnyatDwWFbw4M537WLd7XGvaBd8Nb&lt;nvmne0Ddkt&gt;&gt;n55vkCyzPdRR&lt;C</property>
+    <property name="confluence.setup.server.id">B4UZ-OOJG-NZ7Q-EFE8</property>
+    <property name="confluence.webapp.context.path">/confluence</property>
+    <property name="hibernate.c3p0.acquire_increment">1</property>
+    <property name="hibernate.c3p0.idle_test_period">100</property>
+    <property name="hibernate.c3p0.max_size">30</property>
+    <property name="hibernate.c3p0.max_statements">0</property>
+    <property name="hibernate.c3p0.min_size">0</property>
+    <property name="hibernate.c3p0.timeout">30</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.isolation">2</property>
+    <property name="hibernate.connection.password"><%= @dbpass %></property>
+    <property name="hibernate.connection.url">jdbc:mysql://<%= @dbhost %>:<%= @dbport %>/<%= @dbname %>?sessionVariables=storage_engine%3D<%= @dbtype%></property>
+    <property name="hibernate.connection.username"><%= @dbuser %></property>
+    <property name="hibernate.dialect">com.atlassian.hibernate.dialect.MySQLDialect</property>
+    <property name="lucene.index.dir">${confluenceHome}/index</property>
+    <property name="webwork.multipart.saveDir">${confluenceHome}/temp</property>
+  </properties>
+</confluence-configuration>

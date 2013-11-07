@@ -1,0 +1,14 @@
+<!--
+A sample configuration file for Tomcat 6
+Customize the docBase attribute, drop in your $CATALINA_HOME/conf/Catalina/localhost/confluence.xml
+Note the JOTM dependencies; you'll need to copy various jars to Tomcat's common/lib/ directory.
+-->
+<Context path="/confluence" docBase="/<%= @install_dir %>/confluence-<%= @cversion %>/confluence" debug="0" useHttpOnly="true">
+
+    <Resource name="UserTransaction" auth="Container" type="javax.transaction.UserTransaction"
+    factory="org.objectweb.jotm.UserTransactionFactory" jotm.timeout="60"/>
+    <Manager pathname=""/>
+
+    <Parameter name="confluence.home" value="<%= @install_dir %>/home"/>
+
+</Context>
